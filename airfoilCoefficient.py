@@ -124,11 +124,11 @@ class DynamicAerodynamicDNN(nn.Module):
 
 # Define model settings
 model_settings = {
-    'hidden_units_per_layer': [512, 256, 128],  
+    'hidden_units_per_layer': [128, 128, 128],  
     'activation': 'relu',
     'output_units': labels.shape[1],
     'learning_rate': 0.001,
-    'epochs': 5,
+    'epochs': 200,
     'patience': 10  # Early stopping patience
 }
 
